@@ -39,7 +39,7 @@ ad0    https://github.com/SecurityGino
 
 # print l0wk3y's tag
 print(lwh)
-time.sleep(3)
+
 
 # clear screen
 os.system('cls' if os.name == 'nt' else 'clear')
@@ -50,9 +50,9 @@ try:
     # checking if OS is MACOS
     if (platform.system()) == 'Darwin':   
         print('MacOS Detected \n \n')       
-        time.sleep(3)      
+              
         print('Checking if Homebrew is installed... \n \n')      
-        time.sleep(3)
+        
 
         # creates result variable of response of brew command
         result = subprocess.run(['brew --version'], capture_output=True, text=True, shell=True)
@@ -60,7 +60,7 @@ try:
         # if result.returncode == 0: continue
         if result.returncode == 0:
             print("Homebrew is installed, continuing... \n \n")
-            time.sleep(3)
+            
 
         
 
@@ -68,7 +68,7 @@ try:
         else:
             
             print("Homebrew is not installed \n \n")
-            time.sleep(3)
+            
             print("Installing Homebrew... Press ctrl-c to cancel, continuing in 5 seconds... \n \n")
             time.sleep(5)
 
@@ -83,7 +83,7 @@ try:
 
                 # Execute the downloaded script
                 subprocess.run(["bash", output_file])
-                time.sleep(3)
+                
 
             except subprocess.CalledProcessError as e:
                 print(f"Error installing Homebrew: {e} \n \n")     
@@ -93,32 +93,32 @@ try:
         print('Installing dependency tkinter, Press ctrl-c to cancel, continuing in 5 seconds... \n \n')
         time.sleep(5)
         subprocess.call(["brew install python-tk"], shell=True)
-        time.sleep(3)
-        "\n \n"
+        
+        
         
             
     # continue if OS is Linux or Windows
     else:
         print('Linux or Windows Detected, continueing... \n \n')
-        time.sleep(3)
+        
 
    
     # define directories, print selected directories and grabs users input for string replacements
-    "\n \n"
+    
     print("\n \nPlease select the root directory to perform the find and replace operation \n \n")
-    time.sleep(3)
+    
     root_folder = fd.askdirectory()
     print("Root Directory Selected: {0}\n \n \n".format(root_folder))
-    time.sleep(3)
+    
     print("Please create or select a backup folder \n \n \n")
-    time.sleep(3)
+    
     backup_folder = fd.asksaveasfilename()
     print("Backup Directory Selected: {0}\n \n \n".format(backup_folder))
-    time.sleep(3)
+    
     old_string = input("\n \nEnter old string:")
-    time.sleep(3)
+    
     new_string = input("\n \nEnter new string:")
-    time.sleep(3)
+    
 
 
     # 
@@ -132,14 +132,14 @@ try:
             shutil.copytree(root_folder, os.path.join(backup_folder, os.path.basename(root_folder)))
 
             print(f"\n \nBackup of {root_folder} created successfully in {backup_folder} \n \n")
-            time.sleep(3)
+            
 
         except Exception as e:
             print(f"Error creating backup: {e} \n \n")
-            time.sleep(3)
+            
 
     backup_folder_operation(root_folder, backup_folder)
-    time.sleep(3)
+    
    
 
     # replace_string_in_files function requires 3 parameters to be executed
@@ -162,11 +162,11 @@ try:
     # calls the function along with required parameters
     replace_string_in_files(root_folder, old_string, new_string)
     print("Find and Replace Operation Complete! \n \n")
-    time.sleep(3)
+    
 
 # except KeyboardInterrupt:
 except KeyboardInterrupt:
     os.system('cls' if os.name == 'nt' else 'clear')
     print('Program Terminated...Exiting. \n \n')
-    time.sleep(3)
+    
     os.system('cls' if os.name == 'nt' else 'clear')
