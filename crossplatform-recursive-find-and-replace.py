@@ -12,7 +12,7 @@ from tkinter import filedialog as fd
 os.system('cls' if os.name == 'nt' else 'clear')
 
 # author tag  
-lwh = '''
+tag = '''
  ████     █████                    █████       ████████            
 ░░███   ███░░░███                 ░░███       ███░░░░███           
  ░███  ███   ░░███ █████ ███ █████ ░███ █████░░░    ░███ █████ ████
@@ -37,14 +37,14 @@ L0WK3Y https://github.com/L0WK3Y-IAAN
 ad0    https://github.com/SecurityGino                                                          
                                                           '''
 
-# print l0wk3y's tag
-print(lwh)
-
+# print author tag
+print(tag)
+time.sleep(3)
 
 # clear screen
 os.system('cls' if os.name == 'nt' else 'clear')
 
-# try and exception handling
+# try and exception handling for MacOS
 try:
     
     # checking if OS is MACOS
