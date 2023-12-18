@@ -52,7 +52,7 @@ try:
         print('MacOS Detected \n \n')       
               
         print('Checking if Homebrew is installed... \n \n')      
-        
+        time.sleep(3)
 
         # creates result variable of response of brew command
         result = subprocess.run(['brew --version'], capture_output=True, text=True, shell=True)
@@ -60,7 +60,7 @@ try:
         # if result.returncode == 0: continue
         if result.returncode == 0:
             print("Homebrew is installed, continuing... \n \n")
-            
+            time.sleep(3)
 
         
 
@@ -93,32 +93,32 @@ try:
         print('Installing dependency tkinter, Press ctrl-c to cancel, continuing in 5 seconds... \n \n')
         time.sleep(5)
         subprocess.call(["brew install python-tk"], shell=True)
-        
+        time.sleep(3)
         
         
             
     # continue if OS is Linux or Windows
     else:
-        print('Linux or Windows Detected, continueing... \n \n')
-        
+        print('Linux or Windows Detected, continuing... \n \n')
+        time.sleep(3)
 
    
     # define directories, print selected directories and grabs users input for string replacements
     
     print("\n \nPlease select the root directory to perform the find and replace operation \n \n")
-    
+    time.sleep(3)
     root_folder = fd.askdirectory()
-    print("Root Directory Selected: {0}\n \n \n".format(root_folder))
-    
-    print("Please create or select a backup folder \n \n \n")
-    
+    print("\n \nRoot Directory Selected: {0}\n \n \n".format(root_folder))
+    time.sleep(3)
+    print("\n \nPlease create or select a backup folder \n \n \n")
+    time.sleep(3)
     backup_folder = fd.asksaveasfilename()
-    print("Backup Directory Selected: {0}\n \n \n".format(backup_folder))
-    
+    print("\n \nBackup Directory Selected: {0}\n \n \n".format(backup_folder))
+    time.sleep(3)
     old_string = input("\n \nEnter old string:")
-    
+    time.sleep(3)
     new_string = input("\n \nEnter new string:")
-    
+    time.sleep(3)
 
 
     # 
@@ -130,7 +130,7 @@ try:
 
             # Copy the contents of the source folder to the backup folder
             shutil.copytree(root_folder, os.path.join(backup_folder, os.path.basename(root_folder)))
-
+            time.sleep(3)
             print(f"\n \nBackup of {root_folder} created successfully in {backup_folder} \n \n")
             
 
@@ -162,11 +162,12 @@ try:
     # calls the function along with required parameters
     replace_string_in_files(root_folder, old_string, new_string)
     print("Find and Replace Operation Complete! \n \n")
+    time.sleep(3)
     
 
 # except KeyboardInterrupt:
 except KeyboardInterrupt:
     os.system('cls' if os.name == 'nt' else 'clear')
     print('Program Terminated...Exiting. \n \n')
-    
+    time.sleep(3)
     os.system('cls' if os.name == 'nt' else 'clear')
