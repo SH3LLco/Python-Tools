@@ -24,17 +24,16 @@ tag = '''
                                                           ███ ░███ 
                                                          ░░██████  
                                                           ░░░░░░   
-    ▄▀
-    ▄▀            ╱╱╱╱╱╭┳━━━╮
-▄▀▄▀▄▀▄▀▄▀        ╱╱╱╱╱┃┃╭━╮┃
-    ▄▀            ╭━━┳━╯┃┃┃┃┃
-    ▄▀            ┃╭╮┃╭╮┃┃┃┃┃
-                  ┃╭╮┃╰╯┃╰━╯┃
-                  ╰╯╰┻━━┻━━━╯                                                     
+     ▄▀            ________.__               
+     ▄▀           /  _____/|__| ____   ____  
+ ▄▀▄▀▄▀▄▀▄▀      /   \  ___|  |/    \ /  _ \ 
+     ▄▀          \    \_\  \  |   |  (  <_> )
+     ▄▀           \______  /__|___|  /\____/ 
+                         \/        \/                                                            
                                                           
 Follow our Github!: 
 L0WK3Y https://github.com/L0WK3Y-IAAN
-ad0    https://github.com/SecurityGino                                                          
+Gino    https://github.com/SecurityGino                                                          
                                                           '''
 
 # print author tag
