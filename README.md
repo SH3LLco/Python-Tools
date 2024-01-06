@@ -1,4 +1,4 @@
-# crossplatform-recursive-find-and-replace-string.py
+# <span style="color:blue">crossplatform-recursive-find-and-replace-string.py</span>
 This script's purpose is to find and replace strings inside of files within a selected directory.
 <br>
 <br>
