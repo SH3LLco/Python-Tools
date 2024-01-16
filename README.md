@@ -2,7 +2,7 @@
 This script's purpose is to find and replace strings inside of files within a selected directory.
 <br>
 <br>
-Author's: L0WK3Y, LL3H$
+Author's: L0WK3Y, SH3LL
 <br>
 ### Main Functions
 
